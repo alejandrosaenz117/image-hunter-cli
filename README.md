@@ -1,6 +1,6 @@
 # image-hunter-cli
 
-##Find where your images are being used with this free Google Image web scraper.
+##An image search tool for finding your photos across the web!
 
 ###Prerequisites
 *  Download Java
