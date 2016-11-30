@@ -4,7 +4,7 @@
 
 ###Prerequisites
 *  Download Java
-*  Development:  Your favorite IDE!  There is a .project included
+*  For Development:  Your favorite IDE!  The soruce code is included for tinkering!
 
 ###Setup/Use
 1.  Download jar to location of your choice
