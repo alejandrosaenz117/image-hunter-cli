@@ -9,7 +9,8 @@
 ###Setup/Use
 1.  Download jar to location of your choice
 2.  Terminal/Console:  **java -jar image-hunter-cli.jar**
-      * Ex: https://{{webpage goes here}}
-3.  HTML page will output at **image-hunter-cli.jar**'s location
-4.  **Happy hunting!**
+3.  When prompted, enter target webpage.
+       *  Ex: https://{{webpage goes here}}
+4.  HTML page will output at **image-hunter-cli.jar**'s location
+5.  **Happy hunting!**
 
