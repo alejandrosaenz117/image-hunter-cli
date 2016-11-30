@@ -26,10 +26,12 @@ public class ImageHunter {
 
 
     public static void main(String[] args) {
-    	System.out.println("Enter a webpage to begin the hunt!");
+    	System.out.println("Enter a webpage and file name to begin the hunt!");
     	System.out.print("Webpage URL: ");
     	Scanner scan = new Scanner(System.in);
     	String webpageURL = scan.next();
+    	System.out.print("File name: ");
+    	String fileName = scan.next();
     	scan.close();
     	
     	List<String> links = new ArrayList<String>();
@@ -101,7 +103,7 @@ public class ImageHunter {
             		+ "Make sure you have the proper protocol (http, https) and the URL is correct!!!");
             //Logger.getLogger(ImageHunter.class.getName()).log(Level.SEVERE, null, ex);
         }
-	    htmlWriter(images, links);
+	    htmlWriter(images, links, fileName);
 	    System.out.println("Hunt Completed");
 	    System.exit(0);
     }
@@ -135,11 +137,11 @@ public class ImageHunter {
 		return doc;
     }
     
-    public static void htmlWriter(List<String> targetLinks, List<String> resultLinks) {
+    public static void htmlWriter(List<String> targetLinks, List<String> resultLinks, String fileName) {
     	FileWriter fWriter = null;
     	BufferedWriter writer = null;
     	try {
-    	    fWriter = new FileWriter("image-hunter_RESULTS.html");
+    	    fWriter = new FileWriter(fileName + ".html");
     	    writer = new BufferedWriter(fWriter);
     	    writer.write("<h1>image-hunter</h1>");
     	    writer.write("<h2>Scent(s) identified...</h2>");
