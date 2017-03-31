@@ -19,5 +19,5 @@
 
 
 
-_Please Note:  This only works for Dynamic webpages_
+_Please Note:  This may not work for dynamic webpages_
 
